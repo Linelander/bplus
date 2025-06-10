@@ -1,7 +1,10 @@
+// What are we storing?
+// Text, dates, numbers
+
 package tree
 
 type BPlusNode interface {
-	Setup(int order) void
+	Setup()
 
 	// Type of node. 0 empty, 1 internal, 2 leaf
 	NodeType() int
